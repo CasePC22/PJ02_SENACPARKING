@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenacParking</title>
+    <link rel="icon" href="img/car.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/adm.css">
+    <link rel="stylesheet" href="css/color.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="painel">
+
+            <div class="logo">
+
+                <img src="/img/senac-logo.png">
+            
+                <h1>Senac Parking</h1>
+                <center><h2>Painel Adm.</h2></center>
+            </div>
+
+            <div class="menu">
+
+                <ul>
+                    <li><a href="#" onclick="func_dash()"><ion-icon name="grid-outline"></ion-icon>DASH</a></li>
+                    <li><a href="#" onclick="func_cadastros()"><ion-icon name="person-outline"></ion-icon>CADASTROS</a></li>
+                    <li><a href="#" onclick="func_config()"><ion-icon name="settings-outline"></ion-icon>EDITAR</a></li>
+                </ul>
+                  
+            </div>
+
+            <button type="button"><a href="index.html">SAIR</a></button>
+
+        </div>
+
+        <div class="geral">
+
+<!----------  INICIO INDICADORES DAS VAGAS  ---------->
+
+            <div class="dash"> 
+
+                <div class="titulo">
+                    <h1>Utilização do Estacionamento</h1>
+                </div>
+
+                <div class="painelPrincipal">
+
+                    <div class="telas">
+
+                        <div>
+                            <p>Total de Vagas</p>
+                            <img src="/img/senac-logo.png">
+                        </div>
+                        <div>
+                            <p>Vagas Utilizadas</p>
+                            <img src="/img/senac-logo.png">
+                        </div>
+                        <div>
+                            <p>Total de Usuários</p>
+                            <img src="/img/senac-logo.png">
+                        </div>
+                        
+                    </div>
+
+                    <div class="telas2">
+
+                        <div>
+                            <p>Utilização das Vagas Normais</p>
+                            <img src="/img/senac-logo.png">
+                        </div>
+                        <div>
+                            <p>Utilização das Vagas de Motos</p>
+                            <img src="/img/senac-logo.png">
+                        </div>
+                        <div>
+                            <p>Utilização das Vagas Especiais</p>
+                            <img src="/img/senac-logo.png">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+<!----------  FIM INDICADORES DAS VAGAS  ---------->
+
+<!----------  INICIO CADASTRO USUARIOS E VEICULOS  ---------->
+
+            <div class="cadastros">
+
+                <div class="titulo">
+                    <h1>Cadastro Geral</h1>
+                </div>
+
+                <div class="painelPrincipal">
+                    
+                    <form method="post"> <!-- action="" --> <!-- ACRESCENTAR O ACTION NO FORM -->
+                        
+                        <div class="cadUsuarios">
+
+                            <h1>Condutor</h1>
+
+                            <div class="nome">
+                                <label for="">Nome</label>
+                                <input type="text" name="frmNome" id="frmNome">
+                            </div>
+                            
+                            <div class="dados">
+                                <label for="">Telefone</label>
+                                <input type="int" name="frmTelefone" id="frmTelefone">
+                                
+                                <label for="">Email</label>
+                                <input type="text" name="frmEmail" id="frmEmail">
+                                
+                                <label for="">Cargo</label>
+                                <input type="text" name="frmCargo" id="frmCargo">
+                            </div>
+                            
+                        </div>
+
+                        <div class="cadVeiculos">
+
+                            <h1>Veículo</h1>
+
+                            <div class="veiculo">
+
+                                <label for="">Veículo</label>
+                                <input type="text" name="frmVeiculo" id="frmVeiculo">
+                                
+                                <label for="">Placa</label>
+                                <input type="text" name="frmPlaca" id="frmPlaca"><br>
+                                
+                                <label for="">Cor do Veículo</label>
+                                <input type="text" name="frmCor" id="frmCor">
+
+                            </div>
+
+                            
+                            
+                        </div>
+
+                        <button type="submit" >CADASTRAR <ion-icon name="save-outline"></ion-icon></button>
+
+                    </form>
+                    
+                </div>
+
+            </div>
+
+<!----------  FIM CADASTRO USUARIOS E VEICULOS  ---------->
+
+<!----------  INICIO CONFIGURAÇÕES  ---------->
+
+            <div class="config">
+
+                <div class="titulo">
+                    <h1>Configurações</h1>
+                </div>
+
+                <div class="painelPrincipal">
+                    
+                    <form method="post">  <!-- action="" -->
+                        
+                        <label for="">Pesquisar por nome: </label>
+                        <input type="text" nome="">
+                        <button type="submit" class="bt"><ion-icon name="search-outline"></ion-icon></button>
+                    
+                    </form>
+                        
+                    <div class="tabela">
+
+                        <img src="/img/tab.png">
+
+                    </div>
+
+                    <div class="alteracoes">
+
+                        <button type="button">APAGAR <ion-icon name="trash-outline"></ion-icon></button>
+                        <button type="button">EDITAR <ion-icon name="build-outline"></ion-icon></button>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+<!----------  FIM CONFIGURAÇÕES  ---------->
+
+        </div>
+
+    </div>
+    
+<script src="java/adm.js"></script>
+
+</body>
+</html>

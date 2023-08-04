@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+body {
+    background: var(--back);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    /* background: palegoldenrod; */
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+/*.container{
+    display: flex;
+    /* flex-direction: row;
+    border-radius: 15px;
+    background: palegoldenrod;
+    width: 1250px;
+    height: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
+}*/
+
+/*.container*/
+.logo,
+/*.container*/
+.painelSenha {
+    height: 600px;
+    display: flex;
+}
+
+/*.container */
+.logo {
+    position: relative;
+    flex: 60%;
+    flex-direction: column;
+    padding: 0 50px;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo::after {
+    content: "";
+    /* Necessário para que a pseudo-classe seja renderizada */
+    position: absolute;
+    /* A camada adicional será posicionada em relação ao elemento pai (.seu-elemento) */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    background-repeat: no-repeat;
+    background-image: url(/img/vagas_mato2.png);
+    background-position: center;
+    background-size: 100% 100%;
+    opacity: 0.4;
+    /* Valor entre 0 (totalmente transparente) e 1 (totalmente opaco) */
+    z-index: -1;
+}
+
+/*.container*/
+.logo .marca img {
+    width: 200px;
+    height: 100px;
+    /* margin: 200px 0 0 90px; */
+    /* background: palevioletred; */
+    margin-top: 150px;
+    margin-left: 50px;
+    left: 10px;
+}
+
+.logo .marca h1 {
+    margin: -30px 0 0 150px;
+    color: var(--font-white);
+    /* background: palegreen; */
+    font-size: 3rem;
+}
+
+.logo .texto h2 {
+    margin-bottom: 25px;
+}
+
+.logo .texto p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--font-white);
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    font-size: 1.15rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-indent: 40px;
+}
+
+/*.container*/
+.painelSenha {
+    background: var(--painelSenha);
+    flex: 40%;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    justify-content: center;
+}
+
+/*.container*/
+.painelSenha .login {
+    font-weight: 400;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+}
+
+/*.container*/
+.painelSenha img {
+    width: 50%;
+    height: 20%;
+}
+
+/*.container*/
+.painelSenha form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 5px;
+}
+
+/*.container*/
+.painelSenha form label {
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+/*.container*/
+.painelSenha form input {
+    margin-bottom: 15px;
+    border-radius: 45px;
+    font-size: 1.5rem;
+    border: none;
+}
+
+/*.container*/
+.painelSenha form .btLogar {
+    background: var(--btLogar);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 35px;
+}
+
+/*.container*/
+.painelSenha form button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*.container*/
+.painelSenha form button:hover {
+    transform: scale(1.2);
+}
+
+.painelSenha .sobreNos {
+    display: none;
+}
+
+/* .painelSenha h1,
+.painelSenha label{
+    text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+
+
+} */
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin: 15px auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+    margin: 5px;
+    font-size: 15px;
+}
+
+footer ul li:hover {
+    background-color: var(--btLogar);
+    border-radius: 15px;
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+
+.sobreNos {
+    display: none;
+}
+
+/* ---------- ANIMAÇÃO DO LOGIN E SENHA ---------- */
+
+#animateLabelLogin span,
+#animatedLabelSenha span {
+    display: inline-block;
+}
+
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.wave-animation span {
+    animation: none;
+    /* Remove a animação do texto antes de aplicar individualmente */
+}
+
+
+/* --------------------------------------------------- */
+
+@media (max-width: 1040px) {
+
+
+    header .logo {
+        display: none;
+    }
+
+    /*.container*/
+    .painelSenha {
+        background: var(--painelSenha);
+        flex: 40%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media (max-width: 509px) {
+
+    footer {
+        margin: 10px auto;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer ul {
+        gap: 2px;
+    }
+
+    footer ul li a {
+        font-size: 0.8rem;
+    }
+
+    .painelSenha .sobreNos {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .painelSenha {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .sobreNos {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vh;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .sobreNos::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url(/img/mato_vaga.jpg);
+        /* background-position: center; */
+        background-size: 100% 100%;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .sobreNos h1 {
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+
+    .sobreNos img {
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    .sobreNos h2 {
+        font-size: 1.45rem;
+        text-align: center;
+        width: 85%;
+        margin-top: 100px;
+        color: #Fff;
+        /* text-shadow: -1px -1px 0 var(--font-shadow), 1px -1px 0 var(--font-shadow), -1px 1px 0 var(--font-shadow), 1px 1px 0 var(--font-shadow); */
+        
+    }
+
+    .sobreNos .log1 {
+        margin-top: 150px;
+        height: auto;
+        width: 90%;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .sobreNos .log1 button {
+        border: none;
+        background: transparent;
+        font-size: 30px;
+    }
+
+    .sobreNos .log1 .bt1,
+    .sobreNos .log1 .bt2 {
+        flex: 47.5%;
+    }
+
+    .sobreNos .log1 .bt2 {
+        color: var(--btLogar);
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    .sobreNos .log1 .bt3 {
+        flex: 5%;
+       /*  border-left-style: ridge;
+        border-right-style: ridge; */
+        font-size: 2.5rem;
+    }
+
+
+}

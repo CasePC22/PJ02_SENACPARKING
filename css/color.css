@@ -1,0 +1,12 @@
+:root {
+    --back: #88A5B4;
+    --logo: #000;
+    --painelSenha:linear-gradient(#fff , #2EA9C4);
+    --btLogar: #F1960D;
+    --font-white: #FFF;
+    --font-shadow: #000;
+    --font-senac: #2b5690;
+    --painelMenu: #607884;
+    --painelPrincipal: #3A4B54;
+    --fundoBranco: #FFF;
+}

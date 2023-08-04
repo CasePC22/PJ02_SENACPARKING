@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Control</title>
+    <link rel="icon" href="img/car.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+</head>
+<body>
+
+    <header>
+       
+        <!-- <div class="container"> -->
+
+            <div class="logo">
+
+                <div class="marca">
+
+                    <img src="/img/senac-logo.png">
+                    
+                    <h1>Senac Parking</h1>
+                
+                </div>
+
+                <div class="texto">
+                    
+                    <h2>Bem-vindo ao Senac Parking!</h2>
+                    <p>Solução ideal para facilitar a gestão eficiente e organizada do estacionamento do Senac. Com a tecnologia de ponta e uma equipe dedicada, estamos prontos para oferecer uma experiência única aos nossos clientes.</p>
+
+                </div>
+            </div>
+
+            <div class="painelSenha">
+                
+
+
+                <img src="/img/senac-logo.png">
+
+                <div class="login">
+                                                          
+                    <h1>Login</h1>
+                
+                </div>
+
+                <form action="painel_portaria.html">
+
+                    <label for="login"  id="animateLabelLogin">Nome</label>
+                    <input type="text" id="login" onclick="animateLabel('animateLabelLogin')" >
+
+                    <label for="senha" id="animatedLabelSenha">Senha</label>
+                    <input type="password" id="inputSenha" onclick="animateLabel('animatedLabelSenha')">
+
+                    <center><button type="submit" class="btLogar">Entrar</button></center>
+                    
+               </form>
+
+            </div>
+
+            <div class="sobreNos">
+
+                <center><img src="/img/senac-logo.png"></center>
+
+                <h1>Senac Park</h1>
+     
+                <h2>Solução ideal para facilitar a gestão eficiente e organizada do estacionamento do Senac.</h2>
+                
+
+
+                <div class="log1">
+
+                   <button type="button" class="bt1">Sobre</button>
+                   <button type="button" class="bt3">|</button>
+                   <button type="button" class="bt2" onclick="logar()">Avançar</button>
+    
+                </div>
+
+            </div>
+
+
+
+
+
+        <!-- </div> -->
+    </header>
+
+    <footer>
+
+        <ul>
+            <li><a href="">Sobre Nós</a></li>
+            <li><a href="">Ajuda</a></li>
+            <li><a href="">Termos</a></li>
+            <li><a href="">Redes Sociais</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="/geral.html">USUÁRIO</a></li>
+            <li><a href="/painel_adm.html">ADM</a></li>
+            <li><a href="/painel_portaria.html">PORTARIA</a></li>
+
+        </ul>
+
+    </footer>
+    
+<script src="java/script.js"></script>
+
+</body>
+</html>

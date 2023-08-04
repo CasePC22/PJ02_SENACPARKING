@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: var(--back);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+.container .painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--painelMenu);
+    height: 100%;
+    width: 18%;
+    min-width: 250px;
+}
+
+.container .painel .logo {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.container .painel .logo img{
+    width: 95px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+}
+
+.container .painel .logo h1 {
+    margin: 40px 0 15px 0;
+    font-size: 1.5rem;
+}
+
+.container .painel .logo h2 {
+    font-size: 1.35rem;
+    margin-bottom: 15px;
+}
+
+.container .painel .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 40%;
+}
+
+.container .painel .menu ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.container .painel .menu ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .painel .menu ul li ion-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.container .painel .menu ul li a {
+    display: inline-flex;
+    align-items: center; 
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+.container .painel .menu ul li:hover {
+    background-color: var(--btLogar);
+    border-radius: 15px;
+    transform: scale(1.2);
+}
+
+.container .painel button {
+    background: var(--btLogar);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 35px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.container .painel button:hover {
+    transform: scale(1.2);
+}
+
+/* ---------- PAINEL PRINCIPAL ---------- */
+
+.container .geral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--painelPrincipal);
+    width: 100%;
+    height: 100vh;
+}
+
+.container .geral .vagas {
+    display: none;
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    
+}
+
+.container .geral .vagas h1 {
+    font-size: 2rem;
+    color: var(--font-white);
+    margin-top: 15px;
+}
+
+.container .geral .vagas .painelPrincipal {
+
+    background-color: var(--fundoBranco);
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* ---------- PAINEL VAGAS ---------- */
+
+.container .geral .vagas {
+   /*  background-color: rgb(146, 83, 32); */
+}

@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--font-white);
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: var(--back);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--painelPrincipal);
+    height: 100vh;
+    width: 100%;
+    
+    position: relative;
+}
+
+.container .painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--painelMenu);
+    height: 100%;
+    width: 18%;
+    min-width: 250px;
+    
+}
+
+.container .painel .logo {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.container .painel .logo img{
+    width: 95px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+}
+
+.container .painel .logo h1 {
+    margin: 40px 0 15px 0;
+    font-size: 1.5rem;
+}
+
+.container .painel .logo h2 {
+    font-size: 1.35rem;
+    margin-bottom: 15px;
+}
+
+
+.container .painel .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 40%;
+}
+
+.container .painel .menu ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.container .painel .menu ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .painel .menu ul li ion-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.container .painel .menu ul li a {
+    display: inline-flex;
+    align-items: center; 
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+.container .painel .menu ul li:hover {
+    background-color: var(--btLogar);
+    border-radius: 15px;
+    transform: scale(1.2);
+}
+
+.container .painel button {
+    background: var(--btLogar);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 35px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.container .painel button:hover {
+    transform: scale(1.2);
+}
+
+/* ---------- PAINEL PRINCIPAL ---------- */
+
+.container .geral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--painelPrincipal);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container .geral .dash,
+.container .geral .cadastros,
+.container .geral .config {
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.container .geral .dash h1,
+.container .geral .cadastros h1,
+.container .geral .config h1 {
+    font-size: 2rem;
+    color: var(--font-white);
+    margin-top: 15px;
+}
+
+.container .geral .dash .painelPrincipal,
+.container .geral .cadastros .painelPrincipal,
+.container .geral .config .painelPrincipal {
+    background-color: var(--fundoBranco);
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- INICIO PAINEL DASH ---------- */
+
+.container .geral .dash .painelPrincipal {
+    background-color: var(--painelMenu);
+}
+
+.container .geral .dash {
+    justify-content: center;
+}
+
+.container .geral .dash .painelPrincipal .telas,
+.container .geral .dash .painelPrincipal .telas2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container .geral .dash .painelPrincipal .telas img,
+.container .geral .dash .painelPrincipal .telas2 img { 
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.container .geral .dash .painelPrincipal .telas > div,
+.container .geral .dash .painelPrincipal .telas2 > div {
+    flex: 1 1 150px;
+    margin: 10px;
+}
+
+.container .geral .dash .painelPrincipal .telas p, 
+.container .geral .dash .painelPrincipal .telas2 p {
+    text-align: center;
+    color: var(--font-white);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* ---------- INICIO PAINEL DASH ---------- */
+
+/* ---------- INICIO PAINEL CADASTRO ---------- */
+.container .geral .cadastros .painelPrincipal {
+    background-color: var(--painelMenu);
+}
+
+.container .geral .cadastros .painelPrincipal h1 {
+    color: var(--font-white);
+}
+
+.container .geral .cadastros .painelPrincipal form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadUsuarios,
+.container .geral .cadastros .painelPrincipal form .cadVeiculos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadUsuarios{
+    width: 100%;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadUsuarios .nome {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadUsuarios .nome input {
+    width: 100%;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadUsuarios .dados {
+    width: 100%;
+    text-align: left;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadUsuarios .dados input {
+    width: 50%;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadVeiculos .veiculo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadVeiculos .veiculo input {
+    width: 50%;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadUsuarios label,
+.container .geral .cadastros .painelPrincipal form .cadVeiculos label {
+    color: var(--font-white);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.container .geral .cadastros .painelPrincipal form .cadUsuarios input,
+.container .geral .cadastros .painelPrincipal form .cadVeiculos input {
+    font-size: 1.25rem;
+    margin: 5px;
+    padding: 5px;
+    color: var(--btLogar);
+    border-radius: 15px;
+    border: 0.5px solid black;
+} 
+
+
+.container .geral .cadastros .painelPrincipal form button {
+    background: var(--btLogar);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 35px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.container .geral .cadastros .painelPrincipal form button ion-icon {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+
+.container .geral .cadastros .painelPrincipal form button:hover {
+    transform: scale(1.2);
+}
+
+/* ---------- FIM PAINEL CADASTRO ---------- */
+
+/* ---------- INICIO PAINEL CONFIGURAÇÕES ---------- */
+
+.container .geral .config .painelPrincipal  {
+    background-color: var(--painelMenu);
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container .geral .config .painelPrincipal form {
+    width: 100%;
+    height: auto;
+    display: flex;    
+    justify-content: center;
+    align-items: center;    
+}
+
+.container .geral .config .painelPrincipal form label {
+    color: var(--font-white);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.container .geral .config .painelPrincipal form input {
+    font-size: 1.25rem;
+    margin: 5px;
+    padding: 5px;
+    color: var(--btLogar);
+    border-radius: 15px;
+    border: 0.5px solid black;
+} 
+
+.container .geral .config .painelPrincipal form button {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .geral .config .painelPrincipal form .bt:hover {
+    transform: scale(1.5);
+}
+
+.container .geral .config .painelPrincipal form ion-icon {
+    color: var(--font-white);
+    font-weight: bold;
+}
+
+.container .geral .config .painelPrincipal .tabela {
+    background-color: var(--fundoBranco);
+    width: 100%;
+    height: 100%;
+    max-height: 470px;
+    border-radius: 15px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .geral .config .painelPrincipal .tabela img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.container .geral .config .painelPrincipal .alteracoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+.container .geral .config .painelPrincipal .alteracoes button {
+    width: 110px;
+    height: auto;
+    padding: 10px;
+    font-size: 1rem;
+    background: var(--btLogar);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .geral .config .painelPrincipal .alteracoes button:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+/* ---------- FIM PAINEL CONFIGURAÇÕES ---------- */
